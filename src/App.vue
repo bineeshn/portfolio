@@ -1,0 +1,53 @@
+<template>
+  <v-app id="inspire" :dark="goDark">
+    <v-main >
+        <Header :goDark="goDark" @changeTheme="updateTheme($event)"/>
+        <Banner/>
+        <v-container align-center>
+            <About/>
+            <Resume/>
+            <Services/>
+            <Contact/>
+            <Nav />
+        </v-container>
+        <Footer/>
+    </v-main>
+  </v-app>
+</template>
+
+<script>
+import Header from './components/Header';
+import Nav from './components/Nav';
+import Banner from './components/Banner';
+import About from './view/About';
+import Services from './view/Services';
+import Resume from './view/Resume';
+import Contact from './view/Contact';
+import Footer from './components/Footer';
+
+export default {
+    name: 'App',
+
+    components: {
+        Header,
+        Nav,
+        Banner,
+        About,
+        Services,
+        Resume,
+        Contact,
+        Footer
+    },
+    data() {
+        return { goDark: true };
+    },
+    methods: {
+        updateTheme(updatedTheme) {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+        this.goDark = !updatedTheme;
+        }
+    }
+};
+</script>
+<style>
+</style>
