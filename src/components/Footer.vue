@@ -8,12 +8,13 @@
 			<v-card-text>
 				<v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.icon"
           class="mx-4 white--text"
           icon
+          :href="icon.link"
         >
           <v-icon size="24px">
-            {{ icon }}
+            {{ icon.icon }}
           </v-icon>
         </v-btn>
 			</v-card-text>
@@ -31,10 +32,11 @@
   export default {
 	  data: () => ({
       icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
+        // 'mdi-twitter',
+        {icon:'mdi-linkedin',
+          link:'https://www.linkedin.com/in/bineeshn'
+        },
+        // 'mdi-instagram',
       ],
     }),
   }

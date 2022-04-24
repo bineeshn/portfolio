@@ -7,6 +7,21 @@ $black: #212121;
 .v-application {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
+    animation: transitionIn 1s linear;
+    @keyframes transitionIn {
+        from{
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .ease{
+        transition: all 2s ease-in;
+    }
     .full__screen{
         min-height: 100vh;
     }
@@ -38,11 +53,11 @@ $black: #212121;
     }
     .v-image{
         transition: 1s;
-        &:hover{
-            cursor: pointer;
-            transform: scale(1.05);
-        }
-    }
+    //     &:hover{
+    //         cursor: pointer;
+    //         transform: scale(1.05);
+    //     }
+     }
     .v-icon{
         &.theme--light{
             color:$black ;

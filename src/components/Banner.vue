@@ -19,7 +19,7 @@
                     <a href="#contact" class="btn button__primary">
                         Contact Me
                     </a>
-                    <a href="#" class="ml-5 btn button__primary">
+                    <a href="https://drive.google.com/uc?export=download&id=1ERGFprsRBIYAggr9FvkdDTJ_z7jglVX7" class="ml-5 btn button__primary" target="_blank">
                         Resume
                     </a>
                 </div>
@@ -37,7 +37,7 @@ export default {
   },
   data() {
       return {
-      msgs: ["Web Developer", "UX/UI Developer", "Photographer"],
+      msgs: ["Web Developer", "UX/UI Developer", "Frontend Developer"],
     };
   }
 };
