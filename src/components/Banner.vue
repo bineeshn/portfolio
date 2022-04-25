@@ -2,10 +2,10 @@
     <v-container fluid class="full__screen">
         <v-layout  id="banner" row justify-center align-center wrap class="mt-1pt-2" >
             <v-flex md6 class="padd-adjust py-10 pr-10">
-                <h1 class="display-1 pb-1">Hey<span class="hand__shake">&#128075;&#127995;</span>, I'm Bineesh</h1>
+                <h1 data-aos="fade-down-right"  data-aos-duration="2000" class="display-1 pb-1">Hey<span class="hand__shake">&#128075;&#127995;</span>, I'm Bineesh</h1>
                 <vue-typed-js :strings="msgs" :typeSpeed="150" :backSpeed="60"  :loop="true">
-                    <h2>
-                        <span class="fixed">I'm a </span> <span class="typing primary--text"></span>
+                    <h2 data-aos="fade-down-right"  data-aos-duration="2000">
+                        <span class="fixed">I'm a </span> <span class="typing secondary--text"></span>
                     </h2>
                 </vue-typed-js>
                 <div class="mt-4" >
@@ -24,7 +24,7 @@
                     </a>
                 </div>
             </v-flex >
-            <v-flex md6 class="d-flex flex-column justify-space-between align-center">
+            <v-flex data-aos="zoom-in-up" data-aos-duration="2000" md6 class="d-flex flex-column justify-space-between align-center">
                 <v-img  class="pt-16" contain max-width="350" width="350" src="../assets/banner-right.png"></v-img>
             </v-flex>
         </v-layout>

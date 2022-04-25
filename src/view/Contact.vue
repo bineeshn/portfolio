@@ -1,10 +1,10 @@
 <template>
-    <v-layout id="contact" row justify-center wrap class="mt-16 pt-2 full__screen">
+    <v-layout id="contact" row justify-center wrap class="mt-16 pt-2">
         <v-flex xs12>
-            <h2 class="text-center subtitle" data-title="LET'S TALK">Contact</h2>
+            <h2 class="text-center subtitle" data-aos="fade-down" data-aos-duration="1500" data-title="LET'S TALK">Contact</h2>
         </v-flex>
-        <v-flex md6 class="pa-6">
-            <h3>Get in<span class="primary--text">&nbsptouch</span></h3>
+        <v-flex data-aos="fade-right" data-aos-duration="1500" md6 class="pa-6">
+            <h3>Get in<span class="secondary--text">&nbsptouch</span></h3>
 
             <div class="py-4 subheading ">
                 <v-icon  color="primary" left>fas fa-map-marker-alt</v-icon>
@@ -13,21 +13,21 @@
             <div class="py-4 subheading">
                 <v-icon  color="primary" left>fas fa-envelope</v-icon>
                 <span class="text">bineeshb004@gmail.com</span>
-                <a class="pl-2 text-decoration-none" href="mailto:bineesh@gmail.com" target="_blank"><v-icon small color="primary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none" href="mailto:bineesh@gmail.com" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
             </div>
             <div class="py-4 subheading">
                 <v-icon color="primary" left>fab fa-whatsapp</v-icon>
                 <span class="text">+91&nbsp;7034271603</span>
-                <a class="pl-2 text-decoration-none" href="https://api.whatsapp.com/send?phone=+917034271603&text=Hello, More Informations!" target="_blank"><v-icon small color="primary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none" href="https://api.whatsapp.com/send?phone=+917034271603&text=Hello, More Informations!" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
             </div>
             <div class="py-4 subheading">
                 <v-icon color="primary" left>fab fa-linkedin-in</v-icon>
                 <span class="text">bineeshn</span>
-                <a class="pl-2 text-decoration-none" href="https://www.linkedin.com/in/bineeshn" target="_blank"><v-icon small color="primary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none" href="https://www.linkedin.com/in/bineeshn" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
             </div>
         </v-flex>
-        <v-flex md6 class="pa-6 d-flex flex-column">
-        	<h3 class="mb-3">Contact<span class="primary--text">&nbspForm</span></h3>
+        <v-flex data-aos="fade-left" data-aos-duration="1500" md6 class="pa-6 d-flex flex-column">
+        	<h3 class="mb-3">Contact<span class="secondary--text">&nbspForm</span></h3>
             <v-card elevation="8" shaped class="pa-3">
                 <v-card-text>
                     <div class="pb-4" v-if="message||error">

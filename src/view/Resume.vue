@@ -1,9 +1,9 @@
 
 <template>
-	<v-layout id="resume" row justify-center  wrap class="mt-16 pt-2 full__screen">
+	<v-layout id="resume" row justify-center  wrap class="mt-16 pt-2">
 		<v-flex xs12>
-			<h2 class="text-center subtitle" data-title="SUMMARY">Resume</h2>
-			<ul class="mx-auto pa-5 text-center">
+			<h2 class="text-center subtitle" data-aos="fade-down" data-aos-duration="1500" data-title="SUMMARY">Resume</h2>
+			<ul data-aos="fade-zoom-in" data-aos-duration="1500" class="mx-auto pa-5 text-center">
 				<li>- Around 3 years of Web Development experience -</li>
 				<li>- Well versed in JavaScript frameworks like Vue Js and React Js -</li>
 				<li>- Good knowledge in designing and developing responsive UI -</li>
@@ -12,7 +12,7 @@
 			</ul>
 
 		</v-flex>
-		<v-flex xs12 class="pa-6 d-flex flex-column">
+		<v-flex data-aos="fade-zoom-in" data-aos-duration="1500" xs12 class="pa-6 d-flex flex-column">
 			<v-carousel
 				cycle
 				height="400"
@@ -21,7 +21,7 @@
 				
 			>
 				<v-carousel-item key=1>
-					<h2 class=" mb-3 primary--text">Skills</h2>
+					<h2 class=" mb-3 secondary--text">Technical Skills</h2>
 					<v-layout>
 						<v-flex xs6 pa-2 >
 							<p>Vue JS</p>
@@ -40,7 +40,7 @@
 					</v-layout>
 				</v-carousel-item>
 				<v-carousel-item key=2>
-					<h2 class=" mb-3 primary--text">Experience</h2>
+					<h2 class=" mb-3 secondary--text">Experience</h2>
 					<v-timeline align-top dense>
 						<v-timeline-item color="primary" small>
 							<v-layout pt-3>
@@ -69,7 +69,7 @@
 					</v-timeline>
 				</v-carousel-item>
 				<v-carousel-item key=3>
-					<h2 class=" mb-3 primary--text">Education</h2>
+					<h2 class=" mb-3 secondary--text">Education</h2>
 					<v-timeline align-top dense>
 						<v-timeline-item color="primary" small>
 							<v-layout pt-3>
