@@ -1,6 +1,6 @@
 
 $primary-color: #1976d2;
-$secondary-color: #ffa726;
+$secondary-color: #d84a4a;
 $terttiary-color: #d4e157 ;
 $white:    #fff;
 $black: #212121;
@@ -9,14 +9,30 @@ $black: #212121;
 .v-application {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    font-weight: 500;
     scroll-behavior: smooth;
-    width: 100%;
     height: 100%;
-    margin: 0; 
+    margin: 0;
     padding: 0; 
     overflow-x: hidden;
+    &#inspire{
+        &.theme--dark{
+            background-color:#02001f;
+        }
+        &.theme--light{ 
+            background-color:#f5f5f5;
+            color: #373738;
+        }   
+    }
+    .v-main__wrap{
+        div:not(:last-child){
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+       
+    }
     .full__screen{
-        min-height: 100vh;
+        min-height: 90vh;
     }
     a,a:hover{
         text-decoration: none;

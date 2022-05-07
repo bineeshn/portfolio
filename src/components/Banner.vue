@@ -1,10 +1,10 @@
 <template>
-    <v-container fluid class="full__screen">
-        <v-layout  id="banner" row justify-center align-center wrap class="mt-1pt-2" >
+    <v-container fluid >
+        <v-layout  id="banner" row justify-center align-center wrap class="mt-1pt-2 full__screen" >
             <v-flex md6 class="padd-adjust py-10 pr-10">
-                <h1 data-aos="fade-down-right"  data-aos-duration="2000" class="display-1 pb-1">Hey<span class="hand__shake">&#128075;&#127995;</span>, I'm Bineesh</h1>
+                <h1 class="pb-1">Hey<span class="hand__wave">&#128075;&#127995;</span>, I'm Bineesh</h1>
                 <vue-typed-js :strings="msgs" :typeSpeed="150" :backSpeed="60"  :loop="true">
-                    <h2 data-aos="fade-down-right"  data-aos-duration="2000">
+                    <h2>
                         <span class="fixed">I'm a </span> <span class="typing secondary--text"></span>
                     </h2>
                 </vue-typed-js>
@@ -48,9 +48,22 @@ export default {
 .padd-adjust{
     padding-left: 10%;
 }
-.hand__shake:hover{
-    display: inline-block;
-    animation: wave 2.25s ease-in-out infinite;
-    transform-origin: 70% 70%;
+.hand__wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;       
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
 </style>

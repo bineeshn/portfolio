@@ -12,6 +12,17 @@
         </v-container>
         <Footer/>
     </v-main>
+    <v-overlay
+      :opacity="1"
+      :value="overlay"
+    >
+      <v-progress-circular :size="70"
+      :width="7"
+      color="primary"
+      indeterminate>
+      </v-progress-circular>
+      
+    </v-overlay>
   </v-app>
 </template>
 
@@ -39,14 +50,22 @@ export default {
         Footer
     },
     data() {
-        return { goDark: true };
+        return { 
+            goDark: true,
+            overlay:true 
+        };
     },
     methods: {
         updateTheme(updatedTheme) {
         this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
         this.goDark = !updatedTheme;
         }
-    }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.overlay = false;
+        }, 500);
+    }, 
 };
 </script>
 <style>
