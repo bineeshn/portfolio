@@ -1,11 +1,11 @@
 <template>
     <v-container fluid >
         <v-layout  id="banner" row justify-center align-center wrap class="mt-1pt-2 full__screen" >
-            <v-flex md6 class="padd-adjust py-10 pr-10">
-                <h1 class="pb-1">Hey<span class="hand__wave">&#128075;&#127995;</span>, I'm Bineesh</h1>
+            <v-flex sm6 class="padd-adjust py-10 pr-10">
+                <h1 class="pb-1">Hey<span class="hand__wave">&#128075;&#127995;</span>, <br>I'm Bineesh</h1>
                 <vue-typed-js :strings="msgs" :typeSpeed="150" :backSpeed="60"  :loop="true">
                     <h2>
-                        <span class="fixed">I'm a </span> <span class="typing secondary--text"></span>
+                        <span class="fixed">I'm a </span> <span class="typing primary--text"></span>
                     </h2>
                 </vue-typed-js>
                 <div class="mt-4" >
@@ -24,8 +24,8 @@
                     </a>
                 </div>
             </v-flex >
-            <v-flex data-aos="zoom-in-up" data-aos-duration="2000" md6 class="d-flex flex-column justify-space-between align-center">
-                <v-img  class="pt-16" contain max-width="350" width="350" src="../assets/banner-right.png"></v-img>
+            <v-flex data-aos="zoom-in-up" data-aos-duration="2000" sm6 class="d-flex flex-column justify-space-between align-center">
+                <v-img  class="pt-16" contain  src="../assets/banner-right.png"></v-img>
             </v-flex>
         </v-layout>
     </v-container>
@@ -37,7 +37,7 @@ export default {
   },
   data() {
       return {
-      msgs: ["Web Developer", "UX/UI Developer", "Frontend Developer"],
+      msgs: ["Web Developer", "UX/UI Designer","UX/UI Developer", "Front end Developer"],
     };
   }
 };
@@ -45,6 +45,9 @@ export default {
 
 <style  lang="scss">
 @use '../scss/common' as *;
+h1{
+    font-size: 62px;
+}
 .padd-adjust{
     padding-left: 10%;
 }
@@ -54,6 +57,17 @@ export default {
   animation-iteration-count: infinite;  
   transform-origin: 70% 70%;      
   display: inline-block;
+}
+.v-image{
+    width: 560px;
+    height: 560px;
+
+}
+@media screen and (max-width: 865px){
+    .v-image{
+        width: 360px;
+        height: 360px;
+    }
 }
 
 @keyframes wave-animation {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar flat dense color="transparent" class="mx-auto">
+    <v-toolbar flat dense color="transparent" class="mx-auto px-7">
         <v-toolbar-title class="headline">
             <span class="font-weight-bold primary--text">Bineesh</span>
             <span>N</span>

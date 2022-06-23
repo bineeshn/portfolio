@@ -3,10 +3,10 @@
         <v-flex xs12>
             <h2 class="text-center subtitle" data-aos="fade-up" data-aos-duration="1500" data-title="WHO AM I">About Me</h2>
         </v-flex>
-        <v-flex data-aos="fade-right" data-aos-duration="1500" md6>
-            <v-img content-class="img__style" contain max-width="400" width="400" src="../assets/Bineesh.png"></v-img>
+        <v-flex data-aos="fade-right" data-aos-duration="1500" sm6>
+            <v-img content-class="img__style" contain width="400" src="../assets/Bineesh.png"></v-img>
         </v-flex >
-        <v-flex data-aos="fade-left" data-aos-duration="1500" md6 class="pa-6">
+        <v-flex data-aos="fade-left" data-aos-duration="1500" sm6 class="pa-6">
             <v-layout class="pb-8" row>
                 <v-flex xs4>
                     <v-card  elevation="4" height=130>
