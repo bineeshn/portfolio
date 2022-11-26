@@ -5,43 +5,70 @@
         </v-flex>
         <v-flex xs12 class="pa-6">
 			<v-layout row>
-				<v-flex data-aos="flip-up" data-aos-duration="1500" sm4 class="pa-5">
-					<v-card class="mx-auto pa-5 text-center" outlined>
-						<v-card-text>
-							<div class="mb-3">
-								<v-icon x-large>fab fa-figma</v-icon>
-							</div>
-							<h3 class="secondary--text">Web Design</h3>
-							<div>
-								<p>Design and build stylish, clean and creative websites that are highly usable using Figma and Adobe Photoshop.</p>
-							</div>
-						</v-card-text>
-					</v-card>
-				</v-flex>
-				<v-flex data-aos="flip-up" data-aos-duration="1500" sm4 class="pa-5">
-					<v-card class="mx-auto pa-5 text-center" outlined>
-						<v-card-text>
-							<div class="mb-3">
+				<v-flex data-aos="flip-up" data-aos-duration="1500" sm6 class="pa-2">
+					<v-card
+						class="mx-auto"
+						outlined
+					>
+						<v-list-item three-line>
+							<v-list-item-avatar
+								tile
+								size="60"
+								color="secondary"
+							>
 								<v-icon x-large>fas fa-laptop-code</v-icon>
-							</div>
-							<h3 class="secondary--text">Web Development</h3>
-							<div>
-								<p>Design and build stylish, clean and creative websites that are highly usable using html,css and javaScript. I build single page applications using Vue JS and React JS.</p>
-							</div>
-						</v-card-text>
+							</v-list-item-avatar>
+							<v-list-item-content>
+								<v-list-item-title class="text-h5 mb-1">
+									Frontend Development
+								</v-list-item-title>
+								<v-list-item-subtitle>Develop beautiful websites</v-list-item-subtitle>
+							</v-list-item-content>
+						</v-list-item>
 					</v-card>
 				</v-flex>
-				<v-flex data-aos="flip-up" data-aos-duration="1500" sm4 class="pa-5">
-					<v-card class="mx-auto pa-5 text-center" outlined>
-						<v-card-text>
-							<div class="mb-3">
+				<v-flex data-aos="flip-up" data-aos-duration="1500" sm6 class="pa-2">
+					<v-card
+						class="mx-auto"
+						outlined
+					>
+						<v-list-item three-line>
+							<v-list-item-avatar
+								tile
+								size="60"
+								color="secondary"
+							>
+								<v-icon x-large>fab fa-figma</v-icon>
+							</v-list-item-avatar>
+							<v-list-item-content>
+								<v-list-item-title class="text-h5 mb-1">
+									UI/UX Design		
+								</v-list-item-title>
+								<v-list-item-subtitle>Plan & design web/app interfaces</v-list-item-subtitle>
+							</v-list-item-content>
+						</v-list-item>
+					</v-card>
+				</v-flex>
+				<v-flex data-aos="flip-up" data-aos-duration="1500" sm6 class="pa-2">
+					<v-card
+						class="mx-auto"
+						outlined
+					>
+						<v-list-item three-line>
+							<v-list-item-avatar
+								tile
+								size="60"
+								color="secondary"
+							>
 								<v-icon x-large>fas fa-check-double</v-icon>
-							</div>
-							<h3 class="secondary--text">UI Testing</h3>
-							<div>
-								<p>Is the process of manuall UI testing is for finding UI defects. It requires a tester to play the role of an end user where by they use most of the application's features to ensure correct behaviour.</p>
-							</div>
-						</v-card-text>
+							</v-list-item-avatar>
+							<v-list-item-content>
+								<v-list-item-title class="text-h5 mb-1">
+									Unit Testing
+								</v-list-item-title>
+								<v-list-item-subtitle>Manuall UI testing is for finding UI defects</v-list-item-subtitle>
+							</v-list-item-content>
+						</v-list-item>
 					</v-card>
 				</v-flex>
 			</v-layout>
@@ -49,18 +76,11 @@
     </v-layout>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-    };
-  }
-};
-</script>
 <style lang="scss" scoped>
-	@media screen and (min-width: 865px){
-		.v-card{
-			min-height: 275px;
+	@use '../scss/common' as *;
+	.v-card{
+		.v-icon.theme--light{
+			color: $white;
 		}
 	}
 </style>

@@ -6,12 +6,12 @@
         <v-flex data-aos="fade-right" data-aos-duration="1500" sm6>
             <v-img content-class="img__style" contain width="400" src="../assets/Bineesh.png"></v-img>
         </v-flex >
-        <v-flex data-aos="fade-left" data-aos-duration="1500" sm6 class="pa-6">
+        <v-flex data-aos="fade-left" data-aos-duration="1500" sm6 class="pa-6 text-center">
             <v-layout class="pb-8" row>
                 <v-flex xs4>
                     <v-card  elevation="4" height=130>
-                        <v-card-text class="d-flex flex-column justify-space-between align-center">
-                            <v-icon large>fas fa-award</v-icon>
+                        <v-card-text class="d-flex flex-column justify-space-between align-center text-center">
+                            <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/prize.png"/>
                             <strong class="secondary--text">Experience</strong>
                             3 years
                         </v-card-text>
@@ -19,8 +19,8 @@
                 </v-flex>
                 <v-flex xs4>
                     <v-card  elevation="4" height=130>
-                        <v-card-text class="d-flex flex-column justify-space-between align-center">
-                            <v-icon large>fas fa-tasks</v-icon>
+                        <v-card-text class="d-flex flex-column justify-space-between align-center text-center">
+                            <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/passed.png"/>
                             <strong  class="secondary--text">Completed</strong>
                             10+ Projects
                         </v-card-text>
@@ -28,8 +28,8 @@
                 </v-flex>
                 <v-flex xs4>
                     <v-card elevation="4" height=130>
-                        <v-card-text class="d-flex flex-column justify-space-between align-center">
-                            <v-icon large>fas fa-headset</v-icon>
+                        <v-card-text class="d-flex flex-column justify-space-between align-center text-center">
+                            <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/support.png"/>
                             <strong  class="secondary--text">Support</strong>
                             Online 24*7
                         </v-card-text>

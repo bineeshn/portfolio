@@ -3,7 +3,7 @@
     <v-toolbar flat dense color="transparent" class="mx-auto px-7">
         <v-toolbar-title class="headline">
             <span class="font-weight-bold primary--text">Bineesh</span>
-            <span>N</span>
+            <span class="font-weight-bold">N</span>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
@@ -30,14 +30,6 @@ export default {
   data() {
     return {
       drawer: null,
-      items: [
-        { title: "About", icon: "mdi-view-dashboard", href: "#about" },
-        { title: "Resume", icon: "mdi-account-box", href: "#resume" },
-        { title: "Services", icon: "mdi-gavel", href: "#services" },
-        { title: "Portfolio", icon: "mdi-view-dashboard", href: "#about" },
-        { title: "Blog", icon: "mdi-account-box", href: "#about" },
-        { title: "Contact", icon: "mdi-gavel", href: "#Contact" },
-      ],
     };
   },
   methods: {

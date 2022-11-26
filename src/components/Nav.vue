@@ -1,8 +1,10 @@
 <template>
     <div class="nav__menu">
         <ul class="nav__list">
-            <li v-for="item in items" class="nav__item">
-                <v-btn depressed small icon :href="item.href"><v-icon>{{item.icon}}</v-icon></v-btn>
+            <li v-for="item in items" class="nav__item" :key ="item.title">
+                <v-btn depressed small icon :href="item.href">
+                    <v-img  v-bind="attrs"  contain  class="large-icon" :src="item.path"/>
+                </v-btn>
             </li>
         </ul>
     </div>
@@ -18,11 +20,11 @@
         data() {
             return {
                 items: [
-                    { title: 'Home', icon: 'fas fa-home',href:"#inspire" },
-                    { title: 'About', icon: 'far fa-user-circle',href:"#about" },
-                    { title: 'Resume', icon: 'far fa-file-alt',href:"#resume"},
-                    { title: 'Portfolio', icon: 'mdi-view-dashboard',href:"#services" },
-                    { title: 'Contact', icon: 'far fa-comments',href:"#contact" },
+                    { title: 'Home', path:require('../assets/home.png'), href:"#inspire" },
+                    { title: 'About', path:require('../assets/hero.png'), href:"#about" },
+                    { title: 'Resume', path:require('../assets/resume.png'), href:"#resume"},
+                    { title: 'Portfolio', path:require('../assets/workstation.png'), href:"#services" },
+                    { title: 'Contact', path:require('../assets/chat.png'), href:"#contact" },
                 ],
             };
         }

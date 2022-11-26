@@ -6,24 +6,38 @@
         <v-flex data-aos="fade-right" data-aos-duration="1500" sm6 class="pa-6">
             <h3>Get in<span class="secondary--text">&nbsptouch</span></h3>
 
-            <div class="py-4 subheading ">
-                <v-icon  color="primary" left>fas fa-map-marker-alt</v-icon>
+            <div class="d-flex flex-row py-4 subheading ">
+                <template>
+                    <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/location.png"/>
+                </template>
                 <span class="text">Kerala,India</span>
             </div>
-            <div class="py-4 subheading">
-                <v-icon  color="primary" left>fas fa-envelope</v-icon>
+            <div class="d-flex flex-row py-4 subheading">
+                <template>
+                    <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/gmail.png"/>
+                </template>
                 <span class="text">bineeshb004@gmail.com</span>
-                <a class="pl-2 text-decoration-none" href="mailto:bineesh@gmail.com" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none align-self-center" href="mailto:bineesh@gmail.com" target="_blank">
+                    <v-img  v-bind="attrs"  contain  class="small-icon" src="../assets/right.png"/>
+                </a>
             </div>
-            <div class="py-4 subheading">
-                <v-icon color="primary" left>fab fa-whatsapp</v-icon>
+            <div class="d-flex flex-row py-4 subheading">
+                <template>
+                    <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/whatsapp.png"/>
+                </template>
                 <span class="text">+91&nbsp;7034271603</span>
-                <a class="pl-2 text-decoration-none" href="https://api.whatsapp.com/send?phone=+917034271603&text=Hello, More Informations!" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none align-self-center" href="https://api.whatsapp.com/send?phone=+917034271603&text=Hello, More Informations!" target="_blank">
+                    <v-img  v-bind="attrs"  contain  class="small-icon" src="../assets/right.png"/>
+                </a>
             </div>
-            <div class="py-4 subheading">
-                <v-icon color="primary" left>fab fa-linkedin-in</v-icon>
+            <div class="d-flex flex-row py-4 subheading">
+                <template>
+                    <v-img  v-bind="attrs"  contain  class="medium-icon" src="../assets/linkedin.png"/>
+                </template>
                 <span class="text">bineeshn</span>
-                <a class="pl-2 text-decoration-none" href="https://www.linkedin.com/in/bineeshn" target="_blank"><v-icon small color="secondary">fas fa-arrow-circle-right</v-icon></a>
+                <a class="pl-2 text-decoration-none align-self-center" href="https://www.linkedin.com/in/bineeshn" target="_blank">
+                    <v-img  v-bind="attrs"  contain  class="small-icon" src="../assets/right.png"/>
+                </a>
             </div>
         </v-flex>
         <v-flex data-aos="fade-left" data-aos-duration="1500" sm6 class="pa-6 d-flex flex-column">
@@ -161,7 +175,14 @@ export default {
 #contact{
     span{
         &.text{
+            align-self: center;
             font-size:18px;
+            padding-left: 10px;
+        }
+    }
+    .v-image{
+        &.v-responsive{
+            flex: initial;
         }
     }
 }

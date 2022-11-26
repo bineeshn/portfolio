@@ -17,7 +17,10 @@
 				<v-flex>
 					<v-card>
 						<v-tabs>
-							<v-tab>Skills</v-tab>
+							<v-tab>
+								<v-img  v-bind="attrs"  contain  class="small-icon mr-1" src="../assets/skills.png" alt="Skills"/>
+								Skills
+							</v-tab>
 							<v-tab-item>
 								<v-card flat class="align-center">
 									<v-card-text>
@@ -51,7 +54,10 @@
 				<v-flex md6 data-aos="fade-right" data-aos-duration="1500">
 					<v-card>
 						<v-tabs>
-							<v-tab>Experience</v-tab>
+							<v-tab>
+								<v-img  v-bind="attrs"  contain  class="small-icon mr-1" src="../assets/expe.png" alt="Experience"/>
+								Experience
+							</v-tab>
 							<v-tab-item>
 								<v-card flat class="min-height">
 									<v-card-text>
@@ -90,7 +96,10 @@
 				<v-flex md6 data-aos="fade-left" data-aos-duration="1500">
 					<v-card>
 						<v-tabs>
-							<v-tab>Education</v-tab>
+							<v-tab>
+								<v-img  v-bind="attrs"  contain  class="small-icon mr-1" src="../assets/edu.png" alt="Education"/>
+								Education
+							</v-tab>
 							<v-tab-item>
 								<v-card flat>
 									<v-card-text>
@@ -194,11 +203,6 @@ export default {
 		}
 	}
 	@media screen and (min-width: 1264px){
-		.min-height{
-			min-height: 315px;
-		}
-	}
-	@media screen and (min-width: 865px) and (max-width: 1263px){
 		.min-height{
 			min-height: 336px;
 		}

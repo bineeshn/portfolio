@@ -1,27 +1,54 @@
 <template>
     <v-container fluid >
         <v-layout  id="banner" row justify-center align-center wrap class="mt-1pt-2 full__screen" >
-            <v-flex sm6 class="padd-adjust py-10 pr-10">
-                <h1 class="pb-1">Hey<span class="hand__wave">&#128075;&#127995;</span>, <br>I'm Bineesh</h1>
+            <v-flex sm6 class="d-flex flex-column justify-space-between align-center pa-3">
+                <h1 class="pb-1 hero-title">Hey<span class="hand__wave">&#128075;&#127995;</span>, <br>I'm Bineesh</h1>
                 <vue-typed-js :strings="msgs" :typeSpeed="150" :backSpeed="60"  :loop="true">
                     <h2>
                         <span class="fixed">I'm a </span> <span class="typing primary--text"></span>
                     </h2>
                 </vue-typed-js>
-                <div class="mt-4" >
+                <div class="mt-4 sub-text" >
                     <p>Developer under development...!</p>
                 </div>
-                <div class="mt-4" >
-                    <a class="text-decoration-none" href="https://www.linkedin.com/in/bineeshn" target="_blank"><v-icon large>fab fa-linkedin</v-icon></a>
-                    <a class="pl-4 text-decoration-none" href="https://github.com/bineeshn" target="_blank"><v-icon large>fab fa-github-square</v-icon></a>
+                <div class="mt-4 d-flex justify-space-around" >
+                    <a class="text-decoration-none " href="https://www.linkedin.com/in/bineeshn" target="_blank">
+                        <v-img  v-bind="attrs" v-on="on" contain  class="large-icon" src="../assets/linkedin.png" alt="linkedin"/>
+                    </a>
+                    <a class="text-decoration-none" href="https://github.com/bineeshn" target="_blank">
+                        <v-img  v-bind="attrs" v-on="on" contain  class="large-icon" src="../assets/github.png" alt="github"/>
+                    </a>
                 </div>
-                <div class="mt-4" >
-                    <a href="#contact" class="btn button__primary">
-                        Contact Me
-                    </a>
-                    <a href="https://drive.google.com/uc?export=download&id=1ERGFprsRBIYAggr9FvkdDTJ_z7jglVX7" class="ml-5 btn button__primary" target="_blank">
-                        Resume
-                    </a>
+                <div class="d-flex w-100" >
+                    <v-row
+                        align="center"
+                        justify="center"
+                        class="my-5"
+                    >
+                        <v-btn
+                            large
+                            color="primary"
+                            raised
+                            rounded
+                            min-width="140px"
+                            href="#contact"
+                            class="mr-4 button__primary"
+                        >
+                            Contact Me
+                        </v-btn>
+                        <v-btn
+                            large
+                            color="primary"
+                            raised
+                            rounded
+                            min-width="140px"
+                            href="https://drive.google.com/uc?export=download&id=1ERGFprsRBIYAggr9FvkdDTJ_z7jglVX7"
+                            target="_blank"
+                             class="ml-4 button__primary"
+                        >
+                            Resume
+                        </v-btn>
+                    </v-row>
                 </div>
             </v-flex >
             <v-flex data-aos="zoom-in-up" data-aos-duration="2000" sm6 class="d-flex flex-column justify-space-between align-center">
@@ -45,12 +72,12 @@ export default {
 
 <style  lang="scss">
 @use '../scss/common' as *;
-h1{
-    font-size: 62px;
+.hero-title{
+    font-size: 75px;
 }
-.padd-adjust{
-    padding-left: 10%;
-}
+// .padd-adjust{
+//     padding-left: 10%;
+// }
 .hand__wave {
   animation-name: wave-animation; 
   animation-duration: 2.5s;       
@@ -63,7 +90,14 @@ h1{
     height: 560px;
 
 }
+.sub-text{
+    color: #949494;
+    font-weight: 600;
+}
 @media screen and (max-width: 865px){
+    .hero-title{
+        font-size: 48px;
+    }
     .v-image{
         width: 360px;
         height: 360px;
