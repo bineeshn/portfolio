@@ -5,7 +5,7 @@
                 <h1 class="pb-1 hero-title">Hey<span class="hand__wave">&#128075;&#127995;</span>, <br>I'm Bineesh</h1>
                 <vue-typed-js :strings="msgs" :typeSpeed="150" :backSpeed="60"  :loop="true">
                     <h2>
-                        <span class="fixed">I'm a </span> <span class="typing primary--text"></span>
+                        <span class="fixed">I'm a </span> <span class="typing secondary--text"></span>
                     </h2>
                 </vue-typed-js>
                 <div class="mt-4 sub-text" >

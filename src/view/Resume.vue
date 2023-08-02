@@ -4,8 +4,8 @@
 		<v-flex xs12>
 			<h2 class="text-center subtitle" data-aos="fade-down" data-aos-duration="1500" data-title="SUMMARY">Resume</h2>
 			<ul data-aos="fade-zoom-in" data-aos-duration="1500" class="mx-auto pa-5 text-center">
-				<li>- Around 3 years of Web Development experience -</li>
-				<li>- Well versed in JavaScript frameworks like Vue Js and React Js -</li>
+				<li>- More than 4 years of Web Development experience -</li>
+				<li>- Well versed in JavaScript frameworks like Vue.js, ReactJs and Next.js -</li>
 				<li>- Good knowledge in designing and developing responsive UI -</li>
 				<li>- Experienced in Agile methodology and iterative development -</li>
 				<li>- Hands on experience with Unit Testing and Code refactoring -</li>
@@ -162,6 +162,7 @@ export default {
       return {
       	datas: [{name: "Vue.js", value :80, path:require('@/assets/vue.webp')},
 		  {name: "ReactJS", value :75, path:require('@/assets/react.png')},
+		  {name: "Next.js", value :75, path:require('@/assets/next.png')},
 		  {name: "JavaScript", value :80, path:require('@/assets/js1.png')},
 		  {name: "TypeScript", value :60, path:require('@/assets/ts.png')},
 		  {name: "HTML5", value :90, path:require('@/assets/html1.webp')},

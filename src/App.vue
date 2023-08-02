@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire" :dark="goDark">
-    <v-main >
+    <v-main>
         <Header :goDark="goDark" @changeTheme="updateTheme($event)"/>
         <Banner/>
         <v-container align-center>
@@ -12,6 +12,24 @@
         </v-container>
         <Footer/>
     </v-main>
+    <vue-particles
+        color="#dedede"
+        :particleOpacity="0.3"
+        :particlesNumber="100"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.2"
+        :linesDistance="100"
+        :moveSpeed="4"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+    >
+    </vue-particles>
     <v-overlay
       :opacity="1"
       :value="overlay"
@@ -52,7 +70,7 @@ export default {
     data() {
         return { 
             goDark: true,
-            overlay:true 
+            overlay:true, 
         };
     },
     methods: {

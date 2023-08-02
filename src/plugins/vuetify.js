@@ -9,16 +9,17 @@ export default new Vuetify({
     dark: true,
     themes: {
       light: {
-        primary: '#4c9aff',
+        primary: '#1E90FF',
         secondary: '#018786',
         tertiary: colors.lime.lighten1,
-        accent: colors.shades.black,
+        accent: colors.grey.darken4,
         error: colors.red.accent3,
       },
       dark: {
-        primary: '#4c9aff',
+        primary: '#1E90FF',
         secondary:'#018786',
         tertiary: colors.lime.lighten1,
+        accent: colors.grey.darken4,
         yellow: colors.amber.accent4,
       },
     },

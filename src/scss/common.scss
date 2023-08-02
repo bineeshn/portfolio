@@ -1,5 +1,5 @@
 
-$primary-color: #4c9aff;
+$primary-color: #1E90FF;
 $secondary-color: #018786;
 $terttiary-color: #0adac6 ;
 $white:    #fff;
@@ -15,6 +15,7 @@ $black: #000;
     margin: 0 auto;
     padding: 0 3%; 
     overflow-x: hidden;
+    justify-content: center;
     &#inspire{
         &.theme--dark{
             background-color:#121212;
@@ -27,6 +28,7 @@ $black: #000;
             }
         }
         &.theme--light{ 
+            background-color: #f8f8f8;
             color: #171718;
             .v-card{
                 .v-card__text{
@@ -34,7 +36,14 @@ $black: #000;
                     font-size: 18px;
                 }
             }
+        }
+        .v-application--wrap{
+            max-width: 1222px;
+            width: 100%;
         }   
+    }
+    .v-main{
+        z-index: 10;
     }
     .full__screen{
         min-height: 90vh;
@@ -119,3 +128,12 @@ $black: #000;
         font-size: 18px;
     }
 }
+#particles-js {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 99%;
+    margin-left: -25%;
+  }
